@@ -4,8 +4,8 @@
 
 function mult(numA, numB) {
   let result = 0;
-  let numMax = Math.max(numA, numB);
-  let numMin = Math.min(numA, numB);
+  const numMax = Math.max(numA, numB);
+  const numMin = Math.min(numA, numB);
   for (let i = 0; i < numMin; i++) {
     result += numMax;
   }
@@ -13,4 +13,4 @@ function mult(numA, numB) {
   return result;
 }
 
-console.log(mult(5, 10));
+console.log(mult(5, 0));
