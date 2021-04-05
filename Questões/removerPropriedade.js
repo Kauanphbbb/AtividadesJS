@@ -4,8 +4,9 @@
 // no segundo parâmetro.
 
 function removeProperty(object, property) {
-  delete object[property];
-  return object;
+  const copy = { ...object };
+  delete copy[property];
+  return copy;
 }
 
 const objectTest = {
